@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <!-- <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>tutorial </title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- <script src="js/bootstra.js"></script> -->
+<!-- <script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<script src="js/jquery.validate.min.js"></script>
+<script src="register.js"></script> -->
+
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+    <!-- <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+
+    <!-- Latest compiled and minified CSS 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Formulario de registro</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- <script src="js/bootstra.js"></script> -->
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<script src="js/jquery.validate.min.js"></script>
+<script src="register.js"></script>
+</head>
+<body>
+    <div class="container">
+        
+        <div class="singup-from-container">
+
+            <form role="form" id="register-form" method="post" autocomplete="off" action="g_registro.php">
+
+            <div class="form-header">
+              <h3 class="form-title"><i class="fa fa-user"> Registrese! </i></h3>
+
+          
+
+            </div>
+
+            <div class="form-body">
+                <!-- input controls -->
+                <div class="form-group">
+                        <div class="input-group">
+                        <div class="input-group-addon"><span class="glyphicon glyphicon-user"></span></div>
+                        <input name="name" type="text" class="form-control" placeholder="Nombre de Usuario" autofocus> 
+                        </div>
+                        <span class="help-block" id="error"></span>
+                </div>
+
+                <div class="row">
+
+                
+                <div class="form-group col-lg-6">
+                        <div class="input-group">
+                            <div class="input-group-addon"><span class="glyphicon glyphicon-user"></span></div>
+                            <input type="text" name="dni" class="form-control" placeholder="Ingrese DNI" >
+                        </div>
+                        <span class="help-block" id="error"></span>
+                </div>
+
+                <div class="form-group col-lg-6">
+                    <div class="input-group">
+                        <div class="input-group-addon"><span class="glyphicon glyphicon-user"></span></div>
+                        <input type="text" name="cuniv" class="form-control" placeholder="Ingrese Codigo Universitario" >
+                    </div>
+                    <span class="help-block" id="error"></span>
+                </div>
+
+            </div>
+
+                <div class="form-group">
+                        <div class="input-group">
+                            <div class="input-group-addon"><span class="glyphicon glyphicon-pencil"></span></div>
+                            <input type="text" name="apellidoP" class="form-control" placeholder="Ingrese Apellido Paterno" style="text-transform:uppercase;" >
+                        </div>
+                        <span class="help-block" id="error"></span>
+                </div>
+
+                
+                <div class="form-group">
+                        <div class="input-group">
+                            <div class="input-group-addon"><span class="glyphicon glyphicon-pencil"></span></div>
+                            <input type="text" name="apellidoM" class="form-control" placeholder="Ingrese Apellido Materno" style="text-transform:uppercase;">
+                        </div>
+                        <span class="help-block" id="error"></span>
+                </div>
+
+            
+                <div class="form-group">
+                    <div class="input-group">
+                        <div class="input-group-addon"><span class="glyphicon glyphicon-pencil"></span></div>
+                        <select name="fac" id="fac" class="form-control"  value="" placeholder="facultad"></select>
+                        
+                    </div>
+                    <span class="help-block" id="error"></span>
+            </div>
+
+            
+            <div class="form-group">
+                    <div class="input-group">
+                        <div class="input-group-addon"><span class="glyphicon glyphicon-pencil"></span></div>
+                        <select name="ep" id="ep" class="form-control"></select>
+                        <!--<input type="text" name="esc" class="form-control" placeholder="Ingrese Escuela" style="text-transform:uppercase;"> -->
+                    </div>
+                    <span class="help-block" id="error"></span>
+            </div> 
+        
+            <!--
+             <div class="form-group">
+                <label class="col-md-4 control-label" for="fac"></label>  
+                <div class="col-md-4">
+                <input id="fac" name="fac" type="text" value="" placeholder="ingrese su facultad" class="form-control input-md" required=""> 
+                <select name="fac" id="fac" class="form-control"></select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="col-md-4 control-label" for="ep"></label>  
+                <div class="col-md-4">
+                <!--<input id="ep" name="ep" type="text" value="" placeholder="ingrese su escuela profesional" class="form-control input-md" required=""> -->
+               <!-- <select name="ep" id="ep" class="form-control"></select>
+                </div>
+              </div> -->
+            
+
+                <div class="row">
+                <div class="form-group col-lg-6">
+                        <div class="input-group">
+                            <div class="input-group-addon"><span class="glyphicon glyphicon-pencil"></span></div>
+                            <input type="text" name="aingreso" class="form-control" placeholder="Ingrese Año de Ingreso" >
+                        </div>
+                        <span class="help-block" id="error"></span>
+                </div>
+
+                <div class="form-group col-lg-6">
+                        <div class="input-group">
+                            <div class="input-group-addon"><span class="glyphicon glyphicon-pencil"></span></div>
+                            <input type="text" name="aegreso" class="form-control" placeholder="Ingrese Año de Egreso" >
+                        </div>
+                        <span class="help-block" id="error"></span>
+                </div>
+            </div>
+
+
+                <div class="form-group">
+                            <div class="input-group">
+                            <div class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span></div>
+                            <input name="email" type="text" class="form-control" placeholder="Email">
+                            </div>
+                            <span class="help-block" id="error"></span>
+                </div>
+
+                <!-- <div class="row">
+
+                       <div class="form-group col-lg-6">
+                            <div class="input-group">
+                            <div class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></div>
+                            <input name="password" id="password" type="password"  class="form-control" placeholder="Ingrese Contraseña">
+                            </div>
+                            <span class="help-block" id="error"></span>
+                        </div>
+    
+                        <div class="form-group col-lg-6">
+                            <div class="input-group">
+                            <div class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></div>
+                            <input  name="cpassword" type="password"  class="form-control" placeholder="Reingrese Contraseña">
+                            </div>
+                            <span class="help-block" id="error"></span>
+                        </div>
+                </div> -->
+
+                
+                </div>
+
+                <div class="form-footer">
+                <!-- form footer, let say for submit button -->
+                    <button type="submit" class="btn btn-info" name="enviar" value="enviar">
+                    <span class="glyphicon glyphicon-log-in"></span> Guardar Registros
+                    </button>
+                </div>
+
+            </form> 
+
+        </div>
+    </div>
+
+    <!-- <div class="form-group">
+        <div class="input-group">
+            <div class="input-group-addon">
+                <span class="glyphicon glyphicon-user">
+
+                </span>
+            </div>
+            <input type="text" name="name" class="form-control" placeholder="Username">
+        </div>
+        <span class="help-block" id="error"></span>
+    </div> 
+-->
+    <!-- <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script> -->
+
+
+
+    
+</body>
+</html>
