@@ -13,6 +13,10 @@ $GLOBALS["var1"];
 $GLOBALS["var2"];
 //header("location:guarda1.php");
 //$var1 = $_POST['var1'];
+
+
+
+
 //var_dump($var2);
 //var_dump($var1);
 $mysqli= getConn();
