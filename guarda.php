@@ -4,9 +4,10 @@
  */
 //include '../functions/config/conexion.php';
  require_once '../functions/config/conexion.php';
- require_once 'g_registro.php'
+ require_once 'g_registro.php';
 //include 'conexion.php';
 $mysqli = getConn();
+
 define('$var1',1);
 
 //encuesta 2018
