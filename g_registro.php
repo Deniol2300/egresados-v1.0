@@ -13,8 +13,8 @@ $GLOBALS["var1"];
 $GLOBALS["var2"];
 //header("location:guarda1.php");
 //$var1 = $_POST['var1'];
-var_dump($var2);
-var_dump($var1);
+//var_dump($var2);
+//var_dump($var1);
 $mysqli= getConn();
 
 $verificar_sql1 = mysqli_query($mysqli, "SELECT id_reg,dni,cod_univ,ap_patern,ap_materno,nomb,fac,esc,a_ingr,a_fin,email,password,auth FROM form_registro order by id_reg");
